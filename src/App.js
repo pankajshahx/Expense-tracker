@@ -2,6 +2,7 @@
 
 import Expenses from './components/Expenses/Expenses';
 import react,{useState} from 'react';
+import './index.css'
 import NewExpense from './components/NewExpenses/NewExpense';
 
 
@@ -19,6 +20,7 @@ const App = ()=> {
 
   return (
     <div>
+      <h1 className="heading">Expense Tracker</h1>
       <NewExpense onAddExpense = {addExpenseHandler} />
       <Expenses item = {expenses} />
     </div>
